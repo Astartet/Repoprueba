@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-areas: "header"
-                        "nav"
+                         "nav"
                         "section"
                         "footer";
     grid-auto-rows: 80px 50px 1fr 45px;
@@ -16,6 +16,7 @@ header{
     background-color: #BDB76B;
     justify-content:center;   
 }
+
 nav{
     grid-area: nav;
     background-color: #FFEFD5;
@@ -37,7 +38,7 @@ section{
     grid-area: section;
     background-color: #E6E6FA;
     padding: 5px;
-
+    text-align: center;
 }
 section img{
     padding: 5px;
@@ -46,7 +47,7 @@ footer{
     grid-area: footer;
     background-color: #FFDEAD;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row-reverse wrap;
     justify-content: space-evenly;
     align-content: center;
     padding: 15px;
@@ -55,6 +56,13 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+footer .ini{
+    color: white;
+    font-weight: bold;
+    background: #d38005;
+    border-radius: 10px;
+    height: 1.5em;
 }
 a{
     color: black;
@@ -69,10 +77,10 @@ header,nav,section,footer{
 h2{
     font-weight: bolder;
     font-size: 2em;
-    color: #2F4F4F;
+    color: rgb(36, 75, 75);
 }
 h3{
-    font-size: 1.25em;
+    font-size: 1.75em;
     text-decoration: underline;
     color: #2F4F4F;
 }

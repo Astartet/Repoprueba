@@ -1,0 +1,45 @@
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #F5F5DC;
+}
+ul
+{
+	display: flex;
+}
+ul li
+{
+	list-style: none;
+	margin: 0 20px;
+	transition: 0.5s;
+}
+ul li a
+{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: sans-serif;
+	transition: 0.25s;
+	padding: 0.15em;
+	margin: 0.15em;
+	display: block;
+}
+ul:hover li a
+{
+	transform: scale(1.1);
+	opacity: .2;
+	filter: blur(3px);
+}
+ul li a:hover
+{
+	color: #337B7B;
+	background-color: #5FD8AA;
+	border-radius: 5px;
+	transform: scale(2);
+	opacity: 1;
+	filter: blur(0);
+}
